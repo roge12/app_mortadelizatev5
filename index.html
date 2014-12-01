@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="es"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="es"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="es"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="es"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="es"><!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Mortadelízate</title>
+        <!-- <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"> -->
+<!--         <meta content="width=device-width" name="viewport"> -->
+        <meta name="Moratdelízate" content="" />
+        <meta name="description" content="Moratdelízate | 28 de noviembre en cines | Warner Bros. Entertainment." />
+        <meta name="keywords" content="" />
+        <meta property="og:title" content="Mortadelízate" />
+        <meta property="og:site_name" content="App Mortadelízate" />
+        <meta property="og:description" content="Si tu también quieres mortadelizar tu careto y que consiga cien millones de likes entra aquí http://wwww.mortadelizate.es/. ¡No lo dudes y #mortadelizate!#MyF3D 28 de noviembre en cines." />
+         <meta property="og:image" content="http://www.mortadelizate.es/images/share_rs.jpg" />
+
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/jpreloader.min.css" />
+
+        <script type="text/javascript" src="js/html2canvas.min.js"></script>
+        <script type="text/javascript" src="js/FileSaver.min.js"></script>
+
+<!-- First, include the Webcam.js JavaScript Library -->
+        <script type="text/javascript" src="js/webcam.min.js"></script>
+
+        <script src="js/Utils.min.js"></script> 
+        <script src="js/validacion.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="js/modernizr.custom.74281.js"></script>
+        <script src="js/dragdealer.min.js"></script>        
+        <script src="js/easeljs.min.js"></script>
+        <script src="js/canvas_crop.min.js"></script>
+               
+        <script type="text/javascript">
+
+            if (Utils.browser.msie && parseInt(Utils.browser.version) < 9) 
+            {
+                window.location.href = 'index-IE.html';
+            }
+    
+        </script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.5/hammer.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.6/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/cropbox/jquery.cropbox.js"></script>
+        <script src="js/jquery.queryloader2.min.js" type="text/javascript"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-57038936-1', 'auto');
+          ga('send', 'pageview');
+
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-57038936-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();          
+
+        </script>
+
+    </head>
+
+    <body>
+
+    <div class="blanco"></div>
+
+    <section id="jSplash"></section>
+    
+    <div class="wrapper">
+
+            <!--INTRO-->
+        <section class="intro">
+            <div class="shadow-intro">
+                <div class="esquinas">
+                    <img class="arriba izqda" src="images/esquina.png" alt="Esquina">
+                    <img class="arriba dcha" src="images/esquina.png" alt="Esquina">
+                    <img class="abajo izqda special" src="images/esquina.png" alt="Esquina">
+                    <img class="abajo dcha " src="images/esquina.png" alt="Esquina">
+                </div>
+
+                <div class="contenedor-inicio">
+                    <div class="wrapper-titulo">
+                        <div class="titulo">
+                            <div class="trat-titulo"><img src="images/trat-titulo.png" alt="Mortadelo y Filemón"></div>
+                            <div class="presenta"><img src="images/cartel-presenta.png" alt="Presenta"></div>
+                            <div class="mortadelizate"><img src="images/mortadelizate.png" alt="Mortadelizate"></div>                    
+                        </div> 
+                        
+                        <div class="imagen-boton">
+                                <div class="btn-empezar" id="btn-empezar"><a href="#" onclick="_gaq.push(['_trackEvent', 'BotónEmpezar', 'Empezar_Juego', 'Botón_Empezar']);"><span>Empezar</span></a></div>
+                        </div>
+                    </div>
+                    <div class="descargas">
+                        <div class="contenedor-descargas">
+                            <div class="btn-1"><a href="http://line.me/R/shop/detail/3201" target="_blank" onclick="_gaq.push(['_trackEvent', 'DescargaStickersLine', 'DescargarStickersLine', 'DescargaStickers_Line']);"><img src="images/ico-line.png" alt="Descargate en tu móvil los Stickers"></a></div>
+                            <div class="btn-2">
+                                <img src="images/ico-app.png" alt="Descárgate el juego">
+                                <div class="applestore"><a href="https://itunes.apple.com/es/app/mortadelo-y-filemon-frenzy/id914924802?mt=8" target="_blank" onclick="_gaq.push(['_trackEvent', 'DescargaJuegoAppleStore', 'DescargarJuegoAppleStore', 'DescargaJuego_AppleStore']);"><img src="images/ico-apple.png" alt="Apple store"></a></div>
+                                <div class="googleplay"><a href="https://play.google.com/store/apps/details?id=com.immersive.myf" target="_blank" onclick="_gaq.push(['_trackEvent', 'DescargaJuegoGoogleplay', 'DescargarJuegoGoogleplay', 'DescargaJuego_Googleplay']);"><img src="images/ico-googleplay.png" alt="Google play"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- FIN DE CONTAINER -->
+
+    <div class="secciones">
+        <div class="shadow-secciones">
+            <div class="objetos-seccion">
+                <div class="cont-secciones">
+                        <img class="img-headersec" src="images/bg_header_seccion.png" alt="">
+                        <section class="instrucciones" id="instrucciones">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                        </div>
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                           <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6 pasos">
+                                                <div class="contenedor-pasos">
+                                                    <p class="titulo-pasos">Instrucciones</p>
+                                                    <ul class="listado-pasos">
+                                                        <li><p>Elige tu mejor foto.</p></li>
+                                                        <li><p>Busca tu personaje favorito <span> ...y a Mortadelizarte.</span></p></li>
+                                                        <li><p>Comparte tu fotón en las redes.</p></li>                            
+                                                    </ul>
+                                                </div>
+                                                <div class="btn-entendido" id="btn-entendido"><a href="#" onclick="_gaq.push(['_trackEvent', 'BotonEntendido', 'IrEleccionFoto', 'Boton_Entendido']);"></a></div>
+                                           </div>
+
+                                           <div class="col-xs-12 col-sm-7 col-md-6 col-lg-6 pc-bacterio">
+                                                <img src="images/pc-bacterio.png" alt="Bacterio">
+                                           </div>
+                                        </div>
+                                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                        </div>                              
+                                    </div>
+                                </div>
+                        </section> 
+                        <!-- FIN DE INSTRUCCIONES-->
+
+                        <section class="fotografiado" id="fotografiado">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                        </div>
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 tronchamulas">
+                                                <img src="images/tronchamulas.png" alt="Tronchamulas">
+                                           </div>                            
+                                        
+                                           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 opciones">
+                                                <div class="contenedor-opciones">
+                                                    <p class="titulo-hazfoto">Pon tu mejor careto</p>
+                                                    <ul class="listado-opciones">
+                                                        <li>
+                                                            <h4>Sube una foto.</h4>
+                                                            <p>Tiene que ser en plano frontal igual que el de Tronchamulas.</p>
+                                                            <div class="btn-seleccionar" id="btn-selec-sube"><a href="#" onclick="_gaq.push(['_trackEvent', 'BotonSubirFoto', 'SubirFoto', 'BotonSubir_Foto']);"></a></div>
+                                                        </li>
+                                                        <li id="opcion-camara">
+                                                            <h4>Hazte una foto.</h4>
+                                                            <p>Pon tu mejor cara y sonríe.</p>
+                                                            <div class="btn-seleccionar" id="btn-selec-hazte"><a href="#" onclick="_gaq.push(['_trackEvent', 'BotonHacerFoto', 'HacerFoto', 'BotonHacer_Foto']);"></a></div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                           </div>
+                                        </div>
+                                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                        </div>                              
+                                    </div>
+                                </div>
+                        </section>
+
+                        <!-- FIN DE FOTOGRAFIADO-->                       
+
+                        <section class="encuadrate" id="encuadrate">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="hidden-xs col-sm-1 col-md-1 col-lg-1">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                                           <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6 contenedor-encuadrate">
+                                                <div class="content-camara">
+                                                    <div class="camara" id="my_camera" data-urltemp="">
+
+                                                    <canvas id="results-file" width="498" height="353" data-id="http://localhost:8888/proyectosPHP/mortadelizatev4/produccion/images/marco-foto.png">
+                                                    </canvas>
+
+                                                    </div>
+                                                    <div class="imagen" id="imagen">
+
+                                                        <div id="btn-zoom1"></div>
+                                                        <div id="btn-zoom0"></div>
+ <!--                                                        <div id="btn-arriba"></div>
+                                                        <div id="btn-abajo"></div>
+                                                        <div id="btn-izq"></div>
+                                                        <div id="btn-dcha"></div> -->
+                                                    </div>
+                                                </div>                                       
+                                           </div>                            
+                                        
+                                           <div class="col-xs-12 col-sm-7 col-md-6 col-lg-6 captura-foto">
+                                                <div class="contenedor-captura">
+                                                    <div class="titulo-encuadrate">
+                                                        <p class="titulo-encuadra">pa-ta-ta</p>
+                                                        <p>Encuádrate en el marco, sonríe y click.</p>
+                                                    </div>
+                                                    <div class="botones-encuadrate">                               
+                                                        <div class="btn-snapshot" id="btn-snapshot"><a href="#" onclick="_gaq.push(['_trackEvent', 'BotonTomarFoto', 'TomarFoto', 'BotonTomar_Foto']);"></a></div>
+                                                        <div class="btn-snapshot" id="btn-repetir-snapshot"><a href="#" onclick="_gaq.push(['_trackEvent', 'BotonRepetirFoto', 'RepetirFoto', 'BotonRepetir_Foto']);"></a></div>
+                                                        <div class="btn-snapshot" id="btn-subir-snapshot"><a href="#" onclick="_gaq.push(['_trackEvent', 'BotonCargarFoto', 'CargarFoto', 'BotonCargar_Foto']);"><input type="file" id="input-subir-snapshot"></a></div>
+                                                    </div>
+                                                    <div class="btn-continuar" id="btn-continuar-snapshot"><a href="#" onclick="_gaq.push(['_trackEvent', 'BotonContinuar', 'IrSeleccionPersonajes', 'Boton_Continuar']);"></a></div>
+                                                    <div class="btn-atras" id="btn-atras-encuadrate"><a href="#"></a></div>                                            
+                                                </div>
+                                           </div>
+                                        </div>
+                                        <div class="hidden-xs col-sm-1 col-md-1 col-lg-1">
+                                        </div>                              
+                                    </div>
+                                </div>
+                        </section>
+                        <!-- FIN DE ENCUADRATE-->
+
+                        <section class="elige-personaje" id="elige-personaje">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="hidden-xs col-sm-1 col-md-1 col-lg-1">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                                           
+                                           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 contenedor-elige-personaje">
+                                                <div class="foto big1" id="foto">
+                                                </div>
+
+                                                <div class="text-foto">
+                                                    <p>Haz click en los elementos.</p>
+                                                </div>
+                                           </div>                            
+                                        
+                                           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 objetos">
+                                                <div class="contenedor-objetos">
+                                                    <div class="contenedor-elementos">
+                                                        <h1>Elige los Elementos</h1>
+                                                        <ul class="listado-objetos">
+                                                            <li id="objeto1" data-objetobig="images/objetos-personajes/bac-ojos.png"><a href="#"></a></li>
+                                                            <li id="objeto2" data-objetobig="images/objetos-personajes/bac-nariz.png"><a href="#"></a></li>
+                                                            <li id="objeto3" data-objetobig="images/objetos-personajes/bac-barba.png"><a href="#"></a></li>                     
+                                                        </ul>
+                                                    </div>    
+
+                                                    <div class="contenedor-listado">
+                                                        <ul class="listado-personajes">
+                                                            <li class="actual" data-obj1 ="images/objetos-personajes/bac-ojos.png" data-obj2 ="images/objetos-personajes/bac-nariz.png" data-obj3 ="images/objetos-personajes/bac-barba.png" data-objsmall1 ="images/objetos-personajes-small/bac-ojos.png" data-objsmall2 ="images/objetos-personajes-small/bac-nariz.png" data-objsmall3 ="images/objetos-personajes-small/bac-barba.png">
+                                                                    <img src="images/personajes/pers-bacterio.png" class="img-responsive" alt="Bacterio">
+                                                                    <div class="titulo-hover">Bacterio</div>
+                                                            </li>
+                                                            <li data-obj1 ="images/objetos-personajes/fil-ojos.png" data-obj2 ="images/objetos-personajes/fil-nariz.png" data-obj3 ="images/objetos-personajes/fil-pajarita.png" data-objsmall1 ="images/objetos-personajes-small/fil-ojos.png" data-objsmall2 ="images/objetos-personajes-small/fil-nariz.png" data-objsmall3 ="images/objetos-personajes-small/fil-pajarita.png">
+                                                                    <img src="images/personajes/pers-filemon.png" class="img-responsive" alt="Filemón" >
+                                                                    <div class="titulo-hover">Filemón</div>
+                                                            </li>
+                                                            <li data-obj1 ="images/objetos-personajes/mor-gafas.png" data-obj2 ="images/objetos-personajes/mor-nariz.png" data-obj3 ="images/objetos-personajes/mor-orejas.png" data-objsmall1 ="images/objetos-personajes-small/mor-gafas.png" data-objsmall2 ="images/objetos-personajes-small/mor-nariz.png" data-objsmall3 ="images/objetos-personajes-small/mor-orejas.png">
+                                                                    <img src="images/personajes/pers-mortadelo.png" class="img-responsive" alt="Mortadelo" >
+                                                                    <div class="titulo-hover">Mortadelo</div>
+                                                            </li>
+                                                            <li data-obj1 ="images/objetos-personajes/ofe-ojos.png" data-obj2 ="images/objetos-personajes/ofe-pelo.png" data-obj3 ="images/objetos-personajes/ofe-boca.png" data-objsmall1 ="images/objetos-personajes-small/ofe-ojos.png" data-objsmall2 ="images/objetos-personajes-small/ofe-pelo.png" data-objsmall3 ="images/objetos-personajes-small/ofe-boca.png">
+                                                                    <img src="images/personajes/pers-ofelia.png" class="img-responsive" alt="Ofelia" >
+                                                                    <div class="titulo-hover">Ofelia</div>
+                                                            </li>
+                                                            <li data-obj1 ="images/objetos-personajes/sup-ojos.png" data-obj2 ="images/objetos-personajes/sup-nariz.png" data-obj3 ="images/objetos-personajes/sup-bigoteboca.png" data-objsmall1 ="images/objetos-personajes-small/sup-ojos.png" data-objsmall2 ="images/objetos-personajes-small/sup-nariz.png" data-objsmall3 ="images/objetos-personajes-small/sup-bigoteboca.png">
+                                                                    <img src="images/personajes/pers-super.png" class="img-responsive" alt="Super">
+                                                                    <div class="titulo-hover">Super</div>
+                                                            </li>
+                                                            <li data-obj1 ="images/objetos-personajes/tro-ojoscejas-2.png" data-obj2 ="images/objetos-personajes/tro-nariz.png" data-obj3 ="images/objetos-personajes/tro-boca.png" data-objsmall1 ="images/objetos-personajes-small/tro-ojoscejas-2.png" data-objsmall2 ="images/objetos-personajes-small/tro-nariz.png" data-objsmall3 ="images/objetos-personajes-small/tro-boca.png">
+                                                                    <img src="images/personajes/pers-tronchamulas.png" class="img-responsive" alt="Tronchamulas">
+                                                                    <div class="titulo-hover">Tronchamulas</div>
+                                                            </li>
+                                                        </ul>
+
+                                                        <div class="contenedor-flechas">
+                                                            <div class="arrow-l inhabilita" id="arrow-l"></div>
+                                                            <div class="arrow-r" id="arrow-r"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn-continuar" id="btn-continuar-personajes"><a href="#" onclick="_gaq.push(['_trackEvent', 'BotonContinuarPersonajes', 'IrEleccionFrase', 'BotonContinuar_Personajes']);"></a></div>
+                                                    <div class="btn-atras" id="btn-atras-personajes"><a href="#"></a></div>
+
+                                                </div>
+                                                <!-- fin contenedor de objetos-->
+                                            </div>
+
+                                            <div class="hidden-xs col-sm-1 col-md-1 col-lg-1">
+                                            </div>
+                                            
+                                        </div>                              
+                                    </div>
+                                </div>
+                        </section>
+
+                        <!-- FIN DE ELIGE_PERSONAJE-->
+
+                        <section class="elige-frase" id="elige-frase">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="hidden-xs col-sm-1 col-md-1 col-lg-1">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                                           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 contenedor-elige-frase">
+                                                <div class="foto-fin" id="foto-fin">
+                                                  <div class="marco-foto" id="marco-foto">
+                                                        <div class="text-foto">
+                                                            <div class="contenedor-frases">
+                                                               <ul class="listado-frases">
+                                                               
+                                                                    <li class="actual">
+                                                                        <p>¡¡¡Esta es la actitud!!!</p>
+                                                                    </li>
+                                                                   <li>
+                                                                        <p>No, no lo pillo… o sea, <span>que lo cojo pero no lo entiendo.</span></p>
+                                                                    </li>                                    
+                                                                    <li>
+                                                                        <p>Yo quiero melena al viento <span>con mechas.</span></p>
+                                                                    </li>                                    
+                                                                    <li>
+                                                                        <p>¿Qué vas a hacer el resto de tu vida,<span> encanto?</span></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>¡¡¡Toma reflejos!!!</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Da un paso al frente <span>si tienes huevales.</span></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Yo quiero la raya del <span>culo horizontal</span></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Pedazo de cacho de <span>trozo de tronca.</span></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>¡¡¡Dabutten, jefe!!!</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p class="alter">¡Qué robustez, qué planta, qué frontal, qué requetebién que está hecha!</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>¡¡¡Son medio tontos!!! O sea, <span>que son medio listos.</span></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>¡¡¡Toma castaña!!!</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Porque estoy reversizao, que si nooo…</p>
+                                                                    </li>         
+                                                                </ul>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="marco-foto2">
+                                                    </div>
+                                                                                                                 
+                                                </div> 
+                                                  <div class="contenedor-flechas">
+                                                        <div class="arrow-frases-l inhabilita" id="arrow-frases-l"></div>
+                                                        <div class="arrow-frases-r" id="arrow-frases-r"></div>
+                                                    </div>                                                                                                                         
+                                           </div>                            
+                                        
+                                           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 envio">
+                                                <div class="contenedor-envio">
+                                                <div class="titulo-envio">
+                                                    <h1>Elige tu frase</h1>
+                                                    <p class="parrafo-envio">Busca con las flechas la frase más cachon... <span>y compártela</span></p>
+                                                </div>
+
+                                                 <div class="pasos-envio">                                
+                                                       <div class="form-mail" id="form-mail">
+                                                            <div class="btn-cerrar-mail" id="btn-cerrar-mail">X</div>
+                                                            <form method="post" class="compartir-mail">
+                                                                <fieldset>
+                                                                   <!--  <div><p>Si necesitas compartir con más de un mail escríbelo separa por comas.</p></div> -->
+                                                                    
+                                                                    <div class="fondo-mail">
+                                                                        <input type="text" class="nombre" name="nombre" placeholder="Introduce tu nombre" required/>
+                                                                    </div>
+                                                                    <div class="fondo-mail">
+                                                                        <input type="text" class="emailrem" name="emailrem" placeholder="Introduce tu email" required/>
+                                                                    </div>
+                                                                    <div class="fondo-mail">
+                                                                        <input type="text" class="emaildes" name="emaildes" placeholder="El mail de tu amigo" required/>
+                                                                    </div>
+
+                                                                    <div class="ultimo">
+                                                                        <img src="images/ajax.gif" class="ajaxgif hide"/>
+                                                                        <div class="msg"></div>
+                                                                        <div class="btn-enviar" id="btn-enviar">
+                                                                            <button type="submit" class="boton_enviomail"><a href="#" onclick="_gaq.push(['_trackEvent', 'BotonEnviarMail', 'EnviarMail', 'BotonEnviar_Mail']);"></a></button>
+                                                                        </div>    
+                                                                    </div>
+                                                                </fieldset>
+                                                            </form>
+                                                        </div>
+
+                                                        <div class="confirmar-enviar" id="confirmar-enviar">
+                                                            <div class="share-redes">
+                                                                <p class="titulo-opciones">Opciones</p>
+
+                                                                <div class="contenedor-redes">
+                                                                    <ul class="listado-redes">
+                                                                        <li><a href="#" id="btn-download" download="" onclick="_gaq.push(['_trackEvent', 'BotonDescargaFoto', 'DescargarFoto', 'BotonDescarga_Foto']);"><span></span></a></li>
+                                                                        <li><a href="#" id="enviar-mail" onclick="_gaq.push(['_trackEvent', 'BotonAbrirEnviarMail', 'AbrirEnviarMail', 'BotonAbrirEnviar_Mail']);"><span></span></a></li>
+                                                                        <li><a href="http://twitter.com/intent/tweet?text=%23Mortadelizate%20y%20deja%20tu%20careto%20igual%20de%20flipante%20que%20el%20mío.Entra%20en%20http%3A%2F%2Fwwww.mortadelizate.com%2F%20%23MyF3D" target="_blank" class="icomens-tw" id="enviar-twitter" onclick="_gaq.push(['_trackEvent', 'CompartirTwitter', 'IrCompartirTwitter', 'Compartir_Twitter']);"><span></span></a></li>
+                                                                        <li><a href="http://www.facebook.com/sharer.php?s=100&p[url]=www.mortadelizate.es&p[images][0]=www.mortadelizate.es/images/share_rs.jpg&p[title]=Mortadelízate&p[summary]=Si tu también quieres mortadelizar tu careto y que consiga cien millones de likes entra aquí http://www.mortadelizate.es/. ¡No lo dudes y #mortadelizate!#MyF3D 28 de noviembre en cines." target="_blank" class="icomens-fb" id="enviar-facebook" onclick="_gaq.push(['_trackEvent', 'CompartirFacebook', 'IrCompartirFacebook', 'Compartir_Facebook']);"><span></span></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="btn-confirmar" id="btn-confirmar"><a href="#" onclick="_gaq.push(['_trackEvent', 'BotonConfirmarFoto', 'AbrirCompartirRedes', 'BotonConfirmar_Foto']);"></a></div>
+                                                        <div class="btn-terminar" id="btn-terminar"><a href="#" onclick="_gaq.push(['_trackEvent', 'BotonTerminar', 'VolverIntro', 'Boton_Terminar']);"></a></div>
+                                                    </div>
+                                                </div>
+                                                <!-- fin contenedor de envio-->
+                                        </div>
+                                        <div class="hidden-xs col-sm-1 col-md-1 col-lg-1">
+                                        </div>                              
+                                    </div>
+                                </div>
+                        </section>
+                        <!-- FIN DE ELIGE_FRASE-->    
+
+                    </div>
+
+                    <!-- FIN DE CONT-SECCIONES -->
+                    <div class="cont-descargas">
+                        <section class="descargas-secciones" id="descargas-secciones">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                        </div>
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 contenedor-descargas">
+                                               <div class="col-xs-12 col-s-4 col-md-4 col-lg-4 pasos">
+                                                <div class="btn-1">
+                                                    <a href="http://line.me/R/shop/detail/3201" target="_blank" onclick="_gaq.push(['_trackEvent', 'DescargaStickersLine', 'DescargarStickersLine', 'DescargaStickers_Line']);"><img src="images/ico-line.png" alt="Descargate en tu móvil los Stickers"></a>
+                                                </div>
+                                               </div>
+                                               <div class="col-xs-12 col-s-4 col-md-4 col-lg-4 pc-bacterio">
+                                                    <div class="tt-secciones">
+                                                        <a href="http://www.mortadeloyfilemon3d.com/" target="_blank" onclick="_gaq.push(['_trackEvent', 'BotonIrWeb', 'IrWeb', 'BotonIr_Web']);"><img src="images/trat-titulo-secciones.png" alt="Mortadelo y Filemón"></a>
+                                                    </div>                                    
+                                               </div>
+                                               <div class="col-xs-12 col-s-4 col-md-4 col-lg-4 pc-bacterio">
+                                                <div class="btn-2">
+                                                    <img src="images/ico-app.png" alt="Descárgate el juego">
+                                                    <div class="applestore">
+                                                        <a href="https://itunes.apple.com/es/app/mortadelo-y-filemon-frenzy/id914924802?mt=8" target="_blank" onclick="_gaq.push(['_trackEvent', 'DescargaJuegoAppleStore', 'DescargarJuegoAppleStore', 'DescargaJuego_AppleStore']);"><img src="images/ico-apple.png" alt="Apple store"></a>
+                                                    </div>
+                                                    <div class="googleplay">
+                                                        <a href="https://play.google.com/store/apps/details?id=com.immersive.myf" target="_blank" onclick="_gaq.push(['_trackEvent', 'BotonContinuar', 'IrSeleccionPersonajes', 'Boton_Continuar']);"><img src="images/ico-googleplay.png" alt="Google play"></a>
+                                                    </div>
+                                                </div>                                       
+                                               </div>                                   
+                                        </div>
+                                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                        </div>                              
+                                    </div>
+                                </div>
+                        </section>
+                    </div>    
+
+                    <!-- FIN DE CONT-DESCARGAS -->
+
+            </div>
+                <!-- FIN DE SHADOW_SECCIONES-->
+        </div>
+            <!-- FIN DE OBJETOS_SECCION-->
+    </div>
+    <!--FIN DE SECCIONES-->
+
+
+    <footer class="footer">
+        <div class="contenedor">                
+            <div class="copy">
+                <img class="logo-wb" src="images/ico-wb.png" alt="Warner Bros.">
+                <p>&copy; 2014 Warner Bros. Ent. Todos los derechos reservados. No recomendada menores 7 años.</p>
+            </div>
+
+            <div class="redes">
+                <p>Siguenos en:</p>
+                <ul >
+                    <li><a href="https://www.youtube.com/user/warnerbrosespana" class="icon-youtube" title="Facebook"></a></li>
+                    <li><a href="https://twitter.com/WarnerBrosSpain" class="icon-twitter" title="Twitter"></a></li>
+                    <li><a href="https://www.facebook.com/MyF3D" class="icon-facebook" title="YouTube"></a></li>
+                </ul>
+            </div> 
+
+            <div class="legales">
+                <ul>
+                    <li><a href="http://warnerbros.es/condiciones-de-uso" target="_blank">condiciones de uso</a></li>
+                     <li class="separador">|</li>
+                    <li><a href="http://warnerbros.es/privacy-policy" target="_blank">política de privacidad</a></li>
+                </ul> 
+            </div>
+           
+        </div>                         
+    </footer>
+</div>
+<!--FIN DEL WRAPPER -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/javascript.min.js"></script>
+
+</body>
+</html>
+

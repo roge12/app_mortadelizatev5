@@ -1,0 +1,2996 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:700|Love+Ya+Like+A+Sister&subset=latin-ext);
+/*@import url(http://fonts.googleapis.com/css?family=Oswald:700);*/
+@font-face {
+  font-family: 'redes-header';
+  src: url("../fonts/redes-header.eot?89631745");
+  src: url("../fonts/redes-header.eot?89631745#iefix") format("embedded-opentype"), url("../fonts/redes-header.woff?89631745") format("woff"), url("../fonts/redes-header.ttf?89631745") format("truetype"), url("../fonts/redes-header.svg?89631745#redes-header") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dcc_-_ashregular';
+  src: url("../fonts/dcc_-_ash-webfont.eot");
+  src: url("../fonts/dcc_-_ash-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/dcc_-_ash-webfont.woff2") format("woff2"), url("../fonts/dcc_-_ash-webfont.woff") format("woff"), url("../fonts/dcc_-_ash-webfont.ttf") format("truetype"), url("../fonts/dcc_-_ash-webfont.svg#dcc_-_ashregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*@font-face {
+    font-family: 'love_ya_like_a_sisterregular';
+    src: url('../fonts/loveyalikeasister-webfont.eot');
+    src: url('../fonts/loveyalikeasister-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/loveyalikeasister-webfont.woff') format('woff'),
+         url('../fonts/loveyalikeasister-webfont.ttf') format('truetype'),
+         url('../fonts/loveyalikeasister-webfont.svg#love_ya_like_a_sisterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  font-family: Lato;
+  width: 100%;
+  height: 100%;
+}
+
+/*img
+{
+  width: 100%;
+}*/
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'redes-header';
+  font-style: normal;
+  font-weight: normal;
+  /* fix buttons height */
+  line-height: 1em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+}
+
+/*.icon-youtube { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
+.icon-twitter { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
+.icon-facebook { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;'); }*/
+.icon-youtube:before {
+  content: '\e800';
+}
+
+/* '' */
+.icon-twitter:before {
+  content: '\e801';
+}
+
+/* '' */
+.icon-facebook:before {
+  content: '\e802';
+}
+
+/* '' */
+/*Botones de line y descargas del juego en Apple store y Google play*/
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Contenedor del index-IE.html*/
+.contenedorIE {
+  display: block;
+  position: relative;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  text-align: center;
+  background: black url(../images/bg-inicio.jpg) center top no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding-top: 40px;
+}
+.contenedorIE .logo {
+  position: relative;
+  margin: 0 auto;
+  top: 0px;
+  left: 0px;
+  max-width: 542px;
+  width: 100%;
+  max-height: 393px;
+}
+.contenedorIE p {
+  font-family: sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 0px;
+  margin: 30px;
+}
+.contenedorIE p a {
+  color: red;
+}
+
+/*Contenedor del index-devices.html*/
+.wrapper-devices {
+  width: 100%;
+  height: 100%;
+  /*max-width: 1351px;*/
+  margin: 0 auto;
+  /*  background-color: #bbab92;*/
+  /*fin de intro*/
+  /*Cierre footer*/
+}
+.wrapper-devices .intro-devices {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 915px;
+  background: black url(../images/pt_portada.jpg) repeat;
+  /*    background-size: contain;*/
+  overflow: hidden;
+  /*fin de shadow-intro*/
+}
+.wrapper-devices .intro-devices .shadow-intro {
+  width: 100%;
+  height: 100%;
+  background: url(../images/sdw_portada.png) center center no-repeat;
+  background-size: cover;
+  /*fin de esquinas*/
+  /*fin de contenedor-inicio*/
+}
+.wrapper-devices .intro-devices .shadow-intro .esquinas img {
+  width: 166px;
+  height: 166px;
+}
+.wrapper-devices .intro-devices .shadow-intro .esquinas .arriba {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+}
+.wrapper-devices .intro-devices .shadow-intro .esquinas .izqda {
+  position: absolute;
+  left: 0px;
+}
+.wrapper-devices .intro-devices .shadow-intro .esquinas .dcha {
+  position: absolute;
+  right: 0px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.wrapper-devices .intro-devices .shadow-intro .esquinas .abajo {
+  position: absolute;
+  bottom: 0px;
+  z-index: 3;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.wrapper-devices .intro-devices .shadow-intro .esquinas .special {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  max-width: 1055px;
+  margin: 0 auto;
+  background: url(../images/bg-inicio-objetos3.png) left top no-repeat;
+  /*fin wrapper-titulo*/
+  /*fin de descargas*/
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .wrapper-titulo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1055px;
+  /*fin de titulo*/
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .wrapper-titulo .titulo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 100%;
+  /*            margin: 0 auto;
+              text-align: center;*/
+  padding-top: 84px;
+  text-align: center;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .trat-titulo {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .trat-titulo img {
+  width: 100%;
+  max-width: 327px;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .presenta {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .presenta img {
+  width: 100%;
+  max-width: 213px;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .mortadelizate {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .mortadelizate img {
+  width: 100%;
+  max-width: 416px;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .copy-devices {
+  width: 100%;
+  max-width: 405px;
+  height: 164px;
+  background: url(../images/bg_txt.png) center center no-repeat;
+  margin: 0 auto;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .copy-devices p {
+  font-family: 'Love Ya Like A Sister';
+  color: #391c0e;
+  font-size: 17px;
+  text-align: center;
+  width: 100%;
+  padding-top: 25px;
+  margin: 0px auto;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .wrapper-titulo .imagen-boton {
+  position: relative;
+  top: 160px;
+  left: 100px;
+  z-index: 1;
+  width: 100%;
+  height: 580px;
+  background: url(../images/bg-mortadeloyfilemon.png) right top no-repeat;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .descargas {
+  position: absolute;
+  top: 750px;
+  left: 20%;
+  width: 100%;
+  max-width: 600px;
+  min-height: 85px;
+  margin: 0 auto;
+  text-align: center;
+  /*border: 1px solid red;*/
+  /*margin: 260px auto 0px auto;*/
+  /*background: url(../images/fondo-descargas.png) center bottom no-repeat;*/
+  background-position-y: 53px;
+  /*fin contenedor-descargas*/
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .descargas .contenedor-descargas {
+  position: relative;
+  width: 100%;
+  /*max-width: 500px;*/
+  min-height: 49px;
+  margin: 0 auto;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-1 {
+  position: relative;
+  top: 0px;
+  float: left;
+  background-color: #cccccc;
+  width: 265px;
+  height: 91px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: url(../images/bg_cinta.png) center top no-repeat;
+  background-position-x: 69px;
+  background-position-y: 29px;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-1 a {
+  display: block;
+  text-decoration: none;
+  width: 265px;
+  height: 91px;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-1 a img {
+  width: 100%;
+  max-width: 265px;
+  max-height: 91px;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-2 {
+  position: relative;
+  top: 20px;
+  float: left;
+  background-color: #cccccc;
+  width: 226px;
+  height: 100px;
+  margin-left: 10px;
+  background: url(../images/bg_cinta.png) center top no-repeat;
+  background-position-x: 69px;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-2 img {
+  width: 100%;
+  max-width: 226px;
+  max-height: 75px;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-2 .googleplay {
+  position: absolute;
+  top: 39px;
+  left: 144px;
+  display: inline-block;
+  width: 66px;
+  height: 20px;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-2 .googleplay a {
+  display: block;
+  text-decoration: none;
+  width: 66px;
+  height: 20px;
+  cursor: pointer;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-2 .applestore {
+  position: absolute;
+  top: 40px;
+  left: 73px;
+  display: inline-block;
+  width: 66px;
+  height: 20px;
+}
+.wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-2 .applestore a {
+  display: block;
+  text-decoration: none;
+  width: 66px;
+  height: 20px;
+  cursor: pointer;
+}
+.wrapper-devices .footer {
+  clear: both;
+  position: relative;
+  /*height: 73px;*/
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+  font-size: 8px;
+  color: #727272;
+  /*fin contenedor*/
+}
+.wrapper-devices .footer .contenedor {
+  width: 100%;
+  max-width: 1351px;
+  height: 32px;
+  margin: 0 auto;
+  margin-top: 5px;
+  /*legales*/
+  /*fin de redes*/
+}
+.wrapper-devices .footer .contenedor .copy {
+  width: 490px;
+  float: left;
+  margin-left: 15px;
+}
+.wrapper-devices .footer .contenedor .copy .logo-wb {
+  width: 26px;
+  height: 23px;
+  float: left;
+}
+.wrapper-devices .footer .contenedor .copy p {
+  text-transform: uppercase;
+  margin: 10px 0px 0px 40px;
+}
+.wrapper-devices .footer .contenedor .legales {
+  margin-left: 15px;
+  width: 267px;
+  float: left;
+}
+.wrapper-devices .footer .contenedor .legales ul li {
+  display: inline-block;
+  padding-right: 4px;
+  color: #919090;
+  text-transform: uppercase;
+}
+.wrapper-devices .footer .contenedor .legales ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #919090;
+}
+.wrapper-devices .footer .contenedor .legales ul li a:hover, .wrapper-devices .footer .contenedor .legales ul li a:focus {
+  color: #ffffff;
+  cursor: pointer;
+}
+.wrapper-devices .footer .contenedor .legales ul li:last-child {
+  padding-right: 20px;
+}
+.wrapper-devices .footer .contenedor .legales .separador {
+  width: 3px;
+  height: 24px;
+  font-weight: initial;
+  margin-left: 0px;
+  line-height: 27px;
+}
+.wrapper-devices .footer .contenedor .redes {
+  width: 168px;
+  height: 27px;
+  float: right;
+  margin: 0 15px;
+}
+.wrapper-devices .footer .contenedor .redes p {
+  font-size: 9px;
+  text-transform: uppercase;
+  float: left;
+  line-height: 23px;
+}
+.wrapper-devices .footer .contenedor .redes li {
+  float: left;
+  width: 22px;
+  height: 22px;
+  list-style: none;
+  background-color: #333333;
+  margin-left: 10px;
+}
+.wrapper-devices .footer .contenedor .redes li a {
+  display: block;
+  width: 22px;
+  height: 22px;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  line-height: 23px;
+  font-size: 16px;
+}
+.wrapper-devices .footer .contenedor .redes li:hover, .wrapper-devices .footer .contenedor .redes li:focus {
+  color: #ffffff;
+  background-color: #adadad;
+}
+
+/*fin wrapper-devices*/
+/*fin de contenedor-devices*/
+.blanco {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  /*max-width: 1351px;*/
+  margin: 0 auto;
+  /*  background-color: #bbab92;*/
+  /*fin de intro*/
+  /*objetos-seccion*/
+  /*Cierre footer*/
+}
+.wrapper .intro {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 915px;
+  background: black url(../images/pt_portada.jpg) repeat;
+  /*    background-size: contain;*/
+  overflow: hidden;
+  /*fin de shadow-intro*/
+}
+.wrapper .intro .shadow-intro {
+  width: 100%;
+  height: 100%;
+  background: url(../images/sdw_portada.png) center center no-repeat;
+  background-size: cover;
+  /*fin de esquinas*/
+  /*fin de contenedor-inicio*/
+}
+.wrapper .intro .shadow-intro .esquinas img {
+  width: 166px;
+  height: 166px;
+}
+.wrapper .intro .shadow-intro .esquinas .arriba {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+}
+.wrapper .intro .shadow-intro .esquinas .izqda {
+  position: absolute;
+  left: 0px;
+}
+.wrapper .intro .shadow-intro .esquinas .dcha {
+  position: absolute;
+  right: 0px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.wrapper .intro .shadow-intro .esquinas .abajo {
+  position: absolute;
+  bottom: 0px;
+  z-index: 3;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.wrapper .intro .shadow-intro .esquinas .special {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.wrapper .intro .shadow-intro .contenedor-inicio {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  max-width: 1055px;
+  margin: 0 auto;
+  background: url(../images/bg-inicio-objetos3.png) left top no-repeat;
+  /*fin wrapper-titulo*/
+  /*fin de descargas*/
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1055px;
+  /*fin de titulo*/
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .titulo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 100%;
+  /*            margin: 0 auto;
+              text-align: center;*/
+  padding-top: 84px;
+  text-align: center;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .trat-titulo {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .trat-titulo img {
+  width: 100%;
+  max-width: 327px;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .presenta {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .presenta img {
+  width: 100%;
+  max-width: 213px;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .mortadelizate {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .mortadelizate img {
+  width: 100%;
+  max-width: 416px;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .imagen-boton {
+  position: absolute;
+  top: 160px;
+  left: 0px;
+  z-index: 1;
+  width: 100%;
+  height: 580px;
+  background: url(../images/bg-mortadeloyfilemon.png) right top no-repeat;
+  /*fin btn-empezar*/
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .imagen-boton .btn-empezar {
+  position: absolute;
+  top: 296px;
+  right: 433px;
+  display: block;
+  width: 219px;
+  height: 73px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  background: url(../images/boton-empezar.png) no-repeat 0 0;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .imagen-boton .btn-empezar:hover, .wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .imagen-boton .btn-empezar:focus {
+  background: url(../images/boton-empezar.png) no-repeat 0 -108px;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .imagen-boton .btn-empezar span {
+  display: none;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .descargas {
+  position: absolute;
+  top: 750px;
+  left: 20%;
+  width: 100%;
+  max-width: 600px;
+  min-height: 85px;
+  margin: 0 auto;
+  text-align: center;
+  /*border: 1px solid red;*/
+  /*margin: 260px auto 0px auto;*/
+  /*background: url(../images/fondo-descargas.png) center bottom no-repeat;*/
+  background-position-y: 53px;
+  /*fin contenedor-descargas*/
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .descargas .contenedor-descargas {
+  position: relative;
+  width: 100%;
+  /*max-width: 500px;*/
+  min-height: 49px;
+  margin: 0 auto;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-1 {
+  position: relative;
+  top: 0px;
+  float: left;
+  background-color: #cccccc;
+  width: 265px;
+  height: 91px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: url(../images/bg_cinta.png) center top no-repeat;
+  background-position-x: 69px;
+  background-position-y: 29px;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-1 a {
+  display: block;
+  text-decoration: none;
+  width: 265px;
+  height: 91px;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-1 a img {
+  width: 100%;
+  max-width: 265px;
+  max-height: 91px;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-2 {
+  position: relative;
+  top: 20px;
+  float: left;
+  background-color: #cccccc;
+  width: 226px;
+  height: 100px;
+  margin-left: 10px;
+  background: url(../images/bg_cinta.png) center top no-repeat;
+  background-position-x: 69px;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-2 img {
+  width: 100%;
+  max-width: 226px;
+  max-height: 75px;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-2 .googleplay {
+  position: absolute;
+  top: 39px;
+  left: 144px;
+  display: inline-block;
+  width: 66px;
+  height: 20px;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-2 .googleplay a {
+  display: block;
+  text-decoration: none;
+  width: 66px;
+  height: 20px;
+  cursor: pointer;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-2 .applestore {
+  position: absolute;
+  top: 40px;
+  left: 73px;
+  display: inline-block;
+  width: 66px;
+  height: 20px;
+}
+.wrapper .intro .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-2 .applestore a {
+  display: block;
+  text-decoration: none;
+  width: 66px;
+  height: 20px;
+  cursor: pointer;
+}
+.wrapper .secciones {
+  display: none;
+  width: 100%;
+  min-height: 817px;
+  /*background: #000000 url(../images/bg-secciones.jpg) center top no-repeat;*/
+  background: black url(../images/pt_section.jpg) center top repeat;
+  /*background-size: cover;*/
+  /*fin shadow-secciones*/
+}
+.wrapper .secciones .shadow-secciones {
+  /*      background: url(../images/sdw_seccion.png) center center no-repeat;
+        background-size: cover;*/
+  /*fin de cont-secciones*/
+  /*fin de cont-descargas*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion {
+  background: url(../images/bg_elements_body.png) center 17% no-repeat;
+  /* background-size: cover;*/
+  /*fin de fotografiado*/
+  /*fin de encuadrate*/
+  /*fin de elige-personaje*/
+  /*fin de elige-personaje*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones {
+  padding-bottom: 170px;
+  /*fin de instrucciones*/
+  /*fin de container*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .img-headersec {
+  width: 100%;
+  max-width: 906px;
+  margin: 0 auto;
+  display: block;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones {
+  display: none;
+  width: 100%;
+  max-width: 973px;
+  margin: 0 auto;
+  /* padding-top: 155px;*/
+  /*  padding-top: 225px;*/
+  /*fin de container*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones .container {
+  width: 100%;
+  max-width: 973px;
+  /*fin de pasos*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones .container .pasos {
+  /*fin de contenedor pasos*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones .container .pasos .contenedor-pasos .titulo-pasos {
+  font-family: 'dcc_-_ashregular';
+  color: #22252a;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 48px;
+  padding-top: 10px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones .container .pasos .contenedor-pasos .listado-pasos li {
+  list-style: none;
+  width: 100%;
+  max-width: 350px;
+  height: 68px;
+  padding-top: 14px;
+  margin: 0 auto;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones .container .pasos .contenedor-pasos .listado-pasos li p {
+  display: inline-block;
+  font-family: 'Love Ya Like A Sister';
+  color: #000000;
+  font-size: 18px;
+  line-height: 28px;
+  padding-left: 70px;
+  width: 100%;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones .container .pasos .contenedor-pasos .listado-pasos li p span {
+  display: block;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones .container .pasos .contenedor-pasos .listado-pasos li:nth-child(1) {
+  background: url(../images/logo1.png) no-repeat left top;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones .container .pasos .contenedor-pasos .listado-pasos li:nth-child(2) {
+  background: url(../images/logo2.png) no-repeat left top;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones .container .pasos .contenedor-pasos .listado-pasos li:nth-child(2) p {
+  line-height: 20px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones .container .pasos .contenedor-pasos .listado-pasos li:nth-child(3) {
+  background: url(../images/logo3.png) no-repeat left top;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones .container .pasos .btn-entendido {
+  background: url(../images/sprite-botones.png) no-repeat 0 0;
+  width: 173px;
+  height: 50px;
+  margin: 30px auto;
+  cursor: pointer;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones .container .pasos .btn-entendido:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones .container .pasos .btn-entendido:focus {
+  background: url(../images/sprite-botones.png) no-repeat 0 -60px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones .container .pc-bacterio {
+  /*background: url(../images/pc-bacterio.png) right center no-repeat;*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones .container .pc-bacterio img {
+  width: 100%;
+  max-width: 511px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado {
+  display: none;
+  width: 100%;
+  max-width: 973px;
+  margin: 0 auto;
+  /*padding-top: 125px;*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container {
+  width: 100%;
+  max-width: 973px;
+  /*fin de opciones*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .tronchamulas {
+  text-align: center;
+  /*margin-top: 80px;*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .tronchamulas img {
+  width: 100%;
+  max-width: 370px;
+  /*                    height: 531px*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones {
+  /*margin-top: 140px;*/
+  /*fin  de contenedor-opciones*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones .contenedor-opciones {
+  /*fin de listado-opciones*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones .contenedor-opciones .titulo-hazfoto {
+  font-family: 'dcc_-_ashregular';
+  color: #22252a;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 48px;
+  padding-bottom: 27px;
+  width: 100%;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones .contenedor-opciones .listado-opciones {
+  width: 100%;
+  overflow: hidden;
+  min-height: 340px;
+  /*li´s*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones .contenedor-opciones .listado-opciones li {
+  list-style: none;
+  width: 50%;
+  float: left;
+  /*max-width: 350px;*/
+  height: 100%;
+  padding-top: 109px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones .contenedor-opciones .listado-opciones li h4 {
+  font-family: 'Oswald';
+  color: #000000;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 24px;
+  font-weight: 700;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones .contenedor-opciones .listado-opciones li p {
+  font-family: 'Love Ya Like A Sister';
+  color: #000000;
+  font-size: 14px;
+  /*line-height: 28px;*/
+  padding: 0 25px;
+  text-align: center;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones .contenedor-opciones .listado-opciones li p span {
+  display: block;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones .contenedor-opciones .listado-opciones li:nth-child(1) {
+  background: url(../images/ico-subefoto.png) no-repeat center top;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones .contenedor-opciones .listado-opciones li:nth-child(1) .btn-seleccionar {
+  margin: 45px auto;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones .contenedor-opciones .listado-opciones li:nth-child(2) {
+  background: url(../images/ico-haztefoto.png) no-repeat center top;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones .contenedor-opciones .listado-opciones li:nth-child(2) p {
+  /*line-height: 20px;*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones .contenedor-opciones .listado-opciones li:nth-child(2) .btn-seleccionar {
+  margin: 65px auto;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones .contenedor-opciones .listado-opciones li .btn-seleccionar {
+  background: url(../images/sprite-botones.png) no-repeat -602px 0;
+  width: 176px;
+  height: 52px;
+  margin: 22px auto;
+  cursor: pointer;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones .contenedor-opciones .listado-opciones li .btn-seleccionar:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones .contenedor-opciones .listado-opciones li .btn-seleccionar:focus {
+  background: url(../images/sprite-botones.png) no-repeat -602px -60px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate {
+  display: none;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /*padding-top: 240px;*/
+  padding-bottom: 45px;
+  /*fin de container*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container {
+  width: 100%;
+  /*max-width: 973px;*/
+  /*fin de contenedor-encuadrate*/
+  /*fin de captura-foto*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate {
+  position: relative;
+  /*width: 100%;*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara {
+  /*camara*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .camara {
+  position: relative;
+  margin: 0 auto;
+  top: 20px;
+  /*right: 55px;*/
+  right: 0px;
+  width: 498px;
+  /*min-width: 498px;*/
+  height: 353px;
+  overflow: hidden;
+  background: url(../images/marco-foto.png) no-repeat center center;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .camara #results-file {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .camara .cont-results {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  border: 1px solid green;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .camara .esquinas-camara {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  z-index: 4;
+  width: 100%;
+  height: 498px;
+  /*max-width: 498px;*/
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  pointer-events: none;
+  background: url(../images/esquinas-marco.png) no-repeat center top;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .camara .esquinas-camara .encuadre {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  z-index: 4;
+  width: 100%;
+  height: 282px;
+  /*max-width: 276px;*/
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-55%);
+  pointer-events: none;
+  background: url(../images/encuadre.png) no-repeat center top;
+  /*                background: url(../images/objetos-personajes/guia-encuadre-objs.png) no-repeat center top;*/
+  /*                background: url(../images/objetos-personajes/guia-encuadre-objs-file.png) no-repeat center top;*/
+  /*                background: url(../images/objetos-personajes/guia-encuadre-objs-morta.png) no-repeat center top;*/
+  /*                background: url(../images/objetos-personajes/guia-encuadre-objs-ofelia.png) no-repeat center top;*/
+  /*                background: url(../images/objetos-personajes/guia-encuadre-objs-super.png) no-repeat center top;*/
+  /*                            background: url(../images/objetos-personajes/guia-encuadre-objs-troncha.png) no-repeat center top;*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .camara img {
+  width: 100%;
+  max-width: 498px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen {
+  height: 84px;
+  width: 498px;
+  position: relative;
+  bottom: -40px;
+  z-index: 22;
+  left: 0px;
+  text-align: center;
+  margin: 0 auto;
+  /**/
+  /**/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-zoom1,
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-zoom0,
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-arriba,
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-abajo,
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-izq,
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-dcha,
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-rota {
+  width: 32px;
+  height: 32px;
+  margin: 0px 4px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-zoom1 {
+  background: url(../images/sprite_controls.png) no-repeat 0 0;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-zoom1:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-zoom1:focus {
+  background: url(../images/sprite_controls.png) no-repeat 0px -41px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-zoom0 {
+  background: url(../images/sprite_controls.png) no-repeat -44px 0;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-zoom0:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-zoom0:focus {
+  background: url(../images/sprite_controls.png) no-repeat -44px -41px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-arriba {
+  background: url(../images/sprite_controls.png) no-repeat -88px 0;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-arriba:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-arriba:focus {
+  background: url(../images/sprite_controls.png) no-repeat -88px -41px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-abajo {
+  background: url(../images/sprite_controls.png) no-repeat -132px 0;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-abajo:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-abajo:focus {
+  background: url(../images/sprite_controls.png) no-repeat -132px -41px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-izq {
+  background: url(../images/sprite_controls.png) no-repeat -178px 0;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-izq:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-izq:focus {
+  background: url(../images/sprite_controls.png) no-repeat -178px -41px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-dcha {
+  background: url(../images/sprite_controls.png) no-repeat -222px 0;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-dcha:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-dcha:focus {
+  background: url(../images/sprite_controls.png) no-repeat -222px -41px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-rota {
+  background: url(../images/sprite_controls.png) no-repeat -265px 0;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-rota:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .contenedor-encuadrate .content-camara .imagen #btn-rota:focus {
+  background: url(../images/sprite_controls.png) no-repeat -265px -41px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto {
+  position: relative;
+  z-index: 5;
+  /*width: 100%;*/
+  /*fin de contenedor-captura*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura {
+  position: relative;
+  /*margin-left: 200px;*/
+  margin-left: 0px;
+  top: 0px;
+  left: 0px;
+  /*botones encuadrate*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .titulo-encuadrate {
+  /*                  position: absolute;
+                    top: 0px;
+                    left: 0px;*/
+  width: 100%;
+  /* max-width: 400px;*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .titulo-encuadrate p {
+  font-family: 'Love Ya Like A Sister';
+  color: #000000;
+  font-size: 16px;
+  /*              padding-left: 30px;*/
+  text-align: center;
+  padding-bottom: 35px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .titulo-encuadrate .titulo-encuadra {
+  font-family: 'dcc_-_ashregular';
+  color: #22252a;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 48px;
+  padding-bottom: 18px;
+  width: 100%;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .botones-encuadrate {
+  /*                 
+                     position: absolute;
+                    top: 130px;
+                    left: 76px;   */
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .botones-encuadrate .btn-snapshot {
+  width: 129px;
+  cursor: pointer;
+  text-align: center;
+  padding-bottom: 6px;
+  margin: 0 auto;
+  height: 129px;
+  /*                    img
+                      {
+                        width: 129px;
+                        height: 129px;
+                      }*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .botones-encuadrate .btn-snapshot input {
+  display: block !important;
+  width: 100% !important;
+  height: 129px !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  cursor: pointer !important;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .botones-encuadrate #btn-snapshot {
+  background-image: url(../images/btn_shoot.png);
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .botones-encuadrate #btn-snapshot:hover {
+  background-image: url(../images/btn_shoot_over.png);
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .botones-encuadrate #btn-repetir-snapshot {
+  display: none;
+  background-image: url(../images/btn_shoot_repeat.png);
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .botones-encuadrate #btn-repetir-snapshot:hover {
+  background-image: url(../images/btn_shoot_repeat_over.png);
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .botones-encuadrate #btn-subir-snapshot {
+  display: none;
+  background: url(../images/btn_shoot-upload.png) no-repeat center top;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .botones-encuadrate #btn-subir-snapshot:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .botones-encuadrate #btn-subir-snapshot:focus {
+  background: url(../images/btn_shoot-upload_over.png) no-repeat center top;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .btn-continuar {
+  background: url(../images/sprite-botones.png) no-repeat -201px 0;
+  width: 173px;
+  height: 50px;
+  margin: 30px auto;
+  cursor: pointer;
+  opacity: .3;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .btn-continuar:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .btn-continuar:focus {
+  background: url(../images/sprite-botones.png) no-repeat -201px -60px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .btn-atras {
+  background: url(../images/sprite-botones.png) no-repeat -1299px 0;
+  width: 173px;
+  height: 50px;
+  margin: 0px auto;
+  cursor: pointer;
+  opacity: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .btn-atras:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura .btn-atras:focus {
+  background: url(../images/sprite-botones.png) no-repeat -1299px -60px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje {
+  display: none;
+  width: 100%;
+  max-width: 973px;
+  margin: 0 auto;
+  /*padding-top: 204px;*/
+  padding-bottom: 16px;
+  /*fin de container*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container {
+  width: 100%;
+  max-width: 973px;
+  /*contenedor-elige*/
+  /*objetos*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje {
+  position: relative;
+  /*.big-bacterio*/
+  /*.big-filemon*/
+  /*.big-mortadelo*/
+  /*.big-ofelia*/
+  /*.big-super*/
+  /*.big-tronchamulas*/
+  /*.small-bacterio*/
+  /*.small-filemon*/
+  /*.small-mortadelo*/
+  /*.small-ofelia*/
+  /*.small-super*/
+  /*.small-tronchamulas*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big1 #obj1Big1 {
+  width: 91px;
+  height: 39px;
+  position: absolute;
+  top: 111px;
+  left: 211px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big1 #obj1Big1 img {
+  width: 91px;
+  height: 39px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big1 #obj1Big2 {
+  width: 63px;
+  height: 53px;
+  position: absolute;
+  top: 136px;
+  left: 228px;
+  z-index: 2;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big1 #obj1Big2 img {
+  width: 63px;
+  height: 53px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big1 #obj1Big3 {
+  width: 172px;
+  height: 170px;
+  position: absolute;
+  top: 168px;
+  left: 178px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big1 #obj1Big3 img {
+  width: 172px;
+  height: 170px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big2 #obj2Big1 {
+  width: 84px;
+  height: 40px;
+  position: absolute;
+  top: 108px;
+  left: 216px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big2 #obj2Big1 img {
+  width: 84px;
+  height: 40px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big2 #obj2Big2 {
+  width: 73px;
+  height: 53px;
+  position: absolute;
+  top: 137px;
+  left: 223px;
+  z-index: 4;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big2 #obj2Big2 img {
+  width: 73px;
+  height: 53px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big2 #obj2Big3 {
+  width: 89px;
+  height: 67px;
+  position: absolute;
+  top: 230px;
+  left: 217px;
+  z-index: 2;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big2 #obj2Big3 img {
+  width: 89px;
+  height: 67px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big3 #obj3Big1 {
+  width: 120px;
+  height: 50px;
+  position: absolute;
+  top: 106px;
+  left: 196px;
+  z-index: 4;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big3 #obj3Big1 img {
+  width: 120px;
+  height: 50px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big3 #obj3Big3 {
+  width: 174px;
+  height: 73px;
+  position: absolute;
+  top: 108px;
+  left: 170px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big3 #obj3Big3 img {
+  width: 174px;
+  height: 73px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big3 #obj3Big2 {
+  width: 58px;
+  height: 43px;
+  position: absolute;
+  top: 140px;
+  left: 226px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big3 #obj3Big2 img {
+  width: 58px;
+  height: 43px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big4 #obj4Big1 {
+  width: 106px;
+  height: 47px;
+  position: absolute;
+  top: 107px;
+  left: 203px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big4 #obj4Big1 img {
+  width: 106px;
+  height: 47px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big4 #obj4Big2 {
+  width: 238px;
+  height: 175px;
+  position: absolute;
+  top: 5px;
+  left: 144px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big4 #obj4Big2 img {
+  width: 238px;
+  height: 175px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big4 #obj4Big3 {
+  width: 74px;
+  height: 40px;
+  position: absolute;
+  top: 169px;
+  left: 220px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big4 #obj4Big3 img {
+  width: 74px;
+  height: 40px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big5 #obj5Big1 {
+  width: 111px;
+  height: 56px;
+  position: absolute;
+  top: 98px;
+  left: 205px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big5 #obj5Big1 img {
+  width: 111px;
+  height: 56px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big5 #obj5Big2 {
+  width: 67px;
+  height: 64px;
+  position: absolute;
+  top: 135px;
+  left: 221px;
+  z-index: 4;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big5 #obj5Big2 img {
+  width: 67px;
+  height: 64px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big5 #obj5Big3 {
+  width: 129px;
+  height: 116px;
+  position: absolute;
+  top: 162px;
+  left: 191px;
+  z-index: 3;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big5 #obj5Big3 img {
+  width: 129px;
+  height: 116px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big6 #obj6Big1 {
+  width: 176px;
+  height: 79px;
+  position: absolute;
+  top: 72px;
+  left: 169px;
+  z-index: 3;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big6 #obj6Big1 img {
+  width: 177px;
+  height: 84px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big6 #obj6Big2 {
+  width: 47px;
+  height: 38px;
+  position: absolute;
+  top: 134px;
+  left: 232px;
+  z-index: 3;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big6 #obj6Big2 img {
+  width: 47px;
+  height: 38px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big6 #obj6Big3 {
+  width: 117px;
+  height: 65px;
+  position: absolute;
+  top: 153px;
+  left: 201px;
+  z-index: 3;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .big6 #obj6Big3 img {
+  width: 117px;
+  height: 65px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small1 #obj1Sma1 {
+  width: 73px;
+  height: 31px;
+  position: absolute;
+  top: 60px;
+  left: 119px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small1 #obj1Sma1 img {
+  width: 73px;
+  height: 31px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small1 #obj1Sma2 {
+  width: 50px;
+  height: 42px;
+  position: absolute;
+  top: 80px;
+  left: 134px;
+  z-index: 2;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small1 #obj1Sma2 img {
+  width: 50px;
+  height: 42px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small1 #obj1Sma3 {
+  width: 134px;
+  height: 136px;
+  position: absolute;
+  top: 100px;
+  left: 90px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small1 #obj1Sma3 img {
+  width: 134px;
+  height: 136px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small2 #obj2Sma1 {
+  width: 66px;
+  height: 31px;
+  position: absolute;
+  top: 68px;
+  left: 131px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small2 #obj2Sma1 img {
+  width: 66px;
+  height: 31px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small2 #obj2Sma2 {
+  width: 57px;
+  height: 44px;
+  position: absolute;
+  top: 87px;
+  left: 137px;
+  z-index: 4;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small2 #obj2Sma2 img {
+  width: 57px;
+  height: 44px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small2 #obj2Sma3 {
+  width: 70px;
+  height: 52px;
+  position: absolute;
+  top: 150px;
+  left: 127px;
+  z-index: 2;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small2 #obj2Sma3 img {
+  width: 70px;
+  height: 52px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small3 #obj3Sma1 {
+  width: 95px;
+  height: 39px;
+  position: absolute;
+  top: 52px;
+  left: 114px;
+  z-index: 4;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small3 #obj3Sma1 img {
+  width: 95px;
+  height: 50px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small3 #obj3Sma2 {
+  width: 46px;
+  height: 35px;
+  position: absolute;
+  top: 84px;
+  left: 136px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small3 #obj3Sma2 img {
+  width: 46px;
+  height: 35px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small3 #obj3Sma3 {
+  width: 136px;
+  height: 57px;
+  position: absolute;
+  top: 66px;
+  left: 87px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small3 #obj3Sma3 img {
+  width: 136px;
+  height: 57px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small4 #obj4Sma1 {
+  width: 83px;
+  height: 37px;
+  position: absolute;
+  top: 67px;
+  left: 119px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small4 #obj4Sma1 img {
+  width: 83px;
+  height: 37px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small4 #obj4Sma2 {
+  width: 187px;
+  height: 138px;
+  position: absolute;
+  top: -17px;
+  left: 67px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small4 #obj4Sma2 img {
+  width: 187px;
+  height: 138px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small4 #obj4Sma3 {
+  width: 58px;
+  height: 32px;
+  position: absolute;
+  top: 118px;
+  left: 132px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small4 #obj4Sma3 img {
+  width: 58px;
+  height: 32px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small5 #obj5Sma1 {
+  width: 87px;
+  height: 44px;
+  position: absolute;
+  top: 60px;
+  left: 119px;
+  z-index: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small5 #obj5Sma1 img {
+  width: 87px;
+  height: 44px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small5 #obj5Sma2 {
+  width: 54px;
+  height: 50px;
+  position: absolute;
+  top: 84px;
+  left: 131px;
+  z-index: 4;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small5 #obj5Sma2 img {
+  width: 54px;
+  height: 50px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small5 #obj5Sma3 {
+  width: 101px;
+  height: 91px;
+  position: absolute;
+  top: 93px;
+  left: 111px;
+  z-index: 3;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small5 #obj5Sma3 img {
+  width: 101px;
+  height: 91px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small6 #obj6Sma1 {
+  width: 122px;
+  height: 57px;
+  position: absolute;
+  top: 26px;
+  left: 66px;
+  z-index: 3;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small6 #obj6Sma1 img {
+  width: 177px;
+  height: 84px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small6 #obj6Sma2 {
+  width: 37px;
+  height: 30px;
+  position: absolute;
+  top: 87px;
+  left: 141px;
+  z-index: 3;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small6 #obj6Sma2 img {
+  width: 37px;
+  height: 30px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small6 #obj6Sma3 {
+  width: 125px;
+  height: 51px;
+  position: absolute;
+  top: 99px;
+  left: 102px;
+  z-index: 3;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .small6 #obj6Sma3 img {
+  width: 125px;
+  height: 51px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .foto {
+  position: relative;
+  top: 20px;
+  right: 55px;
+  width: 498px;
+  height: 353px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: url(../images/marco-foto.png) no-repeat center center;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .foto .esquinas-camara {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  z-index: 4;
+  width: 100%;
+  height: 498px;
+  max-width: 498px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: url(../images/esquinas-marco.png) no-repeat center top;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .foto .esquinas-camara .encuadre {
+  position: absolute;
+  /*                    top: 50%;*/
+  top: 48%;
+  left: 110px;
+  z-index: 4;
+  width: 100%;
+  height: 282px;
+  max-width: 276px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  /*background: url(../images/encuadre.png) no-repeat center bottom;*/
+  background: url(../images/objetos-personajes-small/guia-encuadre-objs.png) no-repeat center top;
+  /*                background: url(../images/objetos-personajes-small/guia-encuadre-objs-file.png) no-repeat center top;*/
+  /*                background: url(../images/objetos-personajes-small/guia-encuadre-objs-morta.png) no-repeat center top;*/
+  /*                background: url(../images/objetos-personajes-small/guia-encuadre-objs-ofelia.png) no-repeat center top;*/
+  /*                background: url(../images/objetos-personajes-small/guia-encuadre-objs-super.png) no-repeat center top;*/
+  /*                  background: url(../images/objetos-personajes-small/guia-encuadre-objs-troncha.png) no-repeat center top;*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .foto img {
+  /*width: 100%;*/
+  /*height: inherit;*/
+  /*max-width: 498px;*/
+  margin: 0 auto;
+  display: block;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .foto #results-file {
+  display: none;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .text-foto {
+  position: relative;
+  top: 25px;
+  z-index: 10;
+  left: -49px;
+  width: 498px;
+  margin: 0 auto;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .contenedor-elige-personaje .text-foto p {
+  font-family: 'Love Ya Like A Sister';
+  color: #000000;
+  font-size: 16px;
+  /*              padding-left: 30px;*/
+  text-align: center;
+  padding-bottom: 49px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos {
+  position: relative;
+  z-index: 5;
+  /*contenedor-objetos*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos {
+  position: relative;
+  margin-top: 12px;
+  top: 0px;
+  /*left: 149px;*/
+  z-index: 4;
+  /*fin de contenedor-elementos*/
+  /*fin de contenedor-listado*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos {
+  position: relative;
+  width: 100%;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos h1 {
+  font-family: 'dcc_-_ashregular';
+  color: #22252a;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 48px;
+  padding-bottom: 18px;
+  width: 100%;
+  margin: 0px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos {
+  width: 95px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos li {
+  list-style: none;
+  width: 95px;
+  height: 95px;
+  margin-top: 7px;
+  background: url(../images/sprite_objetos.png) no-repeat 0 0;
+  cursor: pointer;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos li:nth-child(1) {
+  background: url(../images/sprite_objetos.png) no-repeat 0 0;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos li:nth-child(2) {
+  background: url(../images/sprite_objetos.png) no-repeat 0 -100px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos li:nth-child(3) {
+  background: url(../images/sprite_objetos.png) no-repeat 0 -200px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos li a {
+  display: block;
+  text-decoration: none;
+  width: 95px;
+  height: 95px;
+  cursor: pointer;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-1:nth-child(1) {
+  background: url(../images/sprite_objetos.png) no-repeat 0 0;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-1:nth-child(2) {
+  background: url(../images/sprite_objetos.png) no-repeat 0 -100px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-1:nth-child(3) {
+  background: url(../images/sprite_objetos.png) no-repeat 0 -200px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-2:nth-child(1) {
+  background: url(../images/sprite_objetos.png) no-repeat -96px 0;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-2:nth-child(2) {
+  background: url(../images/sprite_objetos.png) no-repeat -96px -100px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-2:nth-child(3) {
+  background: url(../images/sprite_objetos.png) no-repeat -96px -200px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-3:nth-child(1) {
+  background: url(../images/sprite_objetos.png) no-repeat -377px 0;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-3:nth-child(2) {
+  background: url(../images/sprite_objetos.png) no-repeat -377px -100px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-3:nth-child(3) {
+  background: url(../images/sprite_objetos.png) no-repeat -377px -200px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-4:nth-child(1) {
+  background: url(../images/sprite_objetos.png) no-repeat -288px 0;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-4:nth-child(2) {
+  background: url(../images/sprite_objetos.png) no-repeat -288px -100px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-4:nth-child(3) {
+  background: url(../images/sprite_objetos.png) no-repeat -288px -200px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-5:nth-child(1) {
+  background: url(../images/sprite_objetos.png) no-repeat -181px 0;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-5:nth-child(2) {
+  background: url(../images/sprite_objetos.png) no-repeat -181px -100px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-5:nth-child(3) {
+  background: url(../images/sprite_objetos.png) no-repeat -181px -200px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-6:nth-child(1) {
+  background: url(../images/sprite_objetos.png) no-repeat -469px 0;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-6:nth-child(2) {
+  background: url(../images/sprite_objetos.png) no-repeat -469px -100px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos .objs-6:nth-child(3) {
+  background: url(../images/sprite_objetos.png) no-repeat -469px -200px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-listado {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 267px;
+  /* height: 100%;*/
+  overflow: hidden;
+  /*              margin: 0 auto;*/
+  /* fin listado-personajes*/
+  /*fin de contenedor-.flechas*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-listado .listado-personajes {
+  width: 100%;
+  height: 100%;
+  margin: 30px auto;
+  position: relative;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-listado .listado-personajes a {
+  border-bottom: 4px solid transparent;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-listado .listado-personajes li {
+  width: 267px;
+  height: 100%;
+  list-style: none;
+  float: left;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-listado .listado-personajes li .actual {
+  border-bottom: 4px solid #ffffff;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-listado .listado-personajes li img {
+  max-width: 267px;
+  margin-top: 50px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-listado .listado-personajes li .titulo-hover {
+  display: block;
+  width: 180px;
+  /*                               height: 10%;*/
+  position: relative;
+  bottom: 0px;
+  left: 48px;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  /*                                  font-family: 'dcc_-_ashregular';*/
+  color: #22252a;
+  text-transform: uppercase;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-listado .contenedor-flechas {
+  position: absolute;
+  bottom: 0px;
+  left: 45px;
+  z-index: 4;
+  width: 180px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-listado .contenedor-flechas .arrow-l {
+  cursor: pointer;
+  float: left;
+  width: 25px;
+  height: 30px;
+  background: url("../images/arrow-left.png") no-repeat center bottom;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .contenedor-listado .contenedor-flechas .arrow-r {
+  cursor: pointer;
+  float: right;
+  width: 25px;
+  height: 30px;
+  background: url("../images/arrow-right.png") no-repeat center bottom;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .btn-continuar {
+  background: url(../images/sprite-botones.png) no-repeat -201px 0;
+  width: 173px;
+  height: 50px;
+  margin: 30px auto;
+  cursor: pointer;
+  clear: both;
+  /*                          position: absolute;
+                            top: 348px;
+                            right: 235px;   */
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .btn-continuar:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .btn-continuar:focus {
+  background: url(../images/sprite-botones.png) no-repeat -201px -60px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .btn-atras {
+  background: url(../images/sprite-botones.png) no-repeat -1299px 0;
+  width: 173px;
+  height: 50px;
+  margin: 0px auto;
+  cursor: pointer;
+  opacity: 1;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .btn-atras:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos .btn-atras:focus {
+  background: url(../images/sprite-botones.png) no-repeat -1299px -60px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase {
+  display: none;
+  width: 100%;
+  max-width: 973px;
+  margin: 0 auto;
+  /*padding-top: 204px;*/
+  padding-bottom: 16px;
+  /*fin de container*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container {
+  width: 100%;
+  max-width: 973px;
+  /*CONTENEDOR-ELIGEFRASE*/
+  /*fin de envio*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase {
+  position: relative;
+  /*fin de foto-fin*/
+  /*fin de contenedor-.flechas*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase .foto-fin {
+  position: relative;
+  top: 20px;
+  right: 55px;
+  z-index: 1;
+  width: 498px;
+  margin: 0 auto;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase .foto-fin #img_recortada {
+  display: none;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  left: 0px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase .foto-fin .marco-foto {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  width: 100%;
+  height: 353px;
+  /*max-height: 381px;*/
+  background: url(../images/marco-foto-frase.png) no-repeat center top;
+  /*fin de texto-foto*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase .foto-fin .marco-foto .text-foto {
+  position: relative;
+  top: 64%;
+  left: 0px;
+  z-index: 3;
+  width: 100%;
+  height: 25px;
+  /*fin contenedor-frases*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase .foto-fin .marco-foto .text-foto .contenedor-frases {
+  width: 267px;
+  margin: 87px auto 0px auto;
+  overflow: hidden;
+  /*listado de frases*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase .foto-fin .marco-foto .text-foto .contenedor-frases .listado-frases {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase .foto-fin .marco-foto .text-foto .contenedor-frases .listado-frases li {
+  width: 267px;
+  height: 100%;
+  list-style: none;
+  float: left;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase .foto-fin .marco-foto .text-foto .contenedor-frases .listado-frases li .actual {
+  border-bottom: 4px solid #ffffff;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase .foto-fin .marco-foto .text-foto .contenedor-frases .listado-frases li .alter {
+  font-size: 15px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase .foto-fin .marco-foto .text-foto .contenedor-frases .listado-frases li p {
+  font-family: 'Love Ya Like A Sister';
+  color: #000000;
+  font-size: 16px;
+  /*              padding-left: 30px;*/
+  text-align: center;
+  padding-bottom: 49px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase .foto-fin .marco-foto .text-foto .contenedor-frases .listado-frases li p span {
+  display: block;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase .foto-fin .marco-foto2 {
+  position: absolute;
+  top: 353px;
+  /*left: 0px;*/
+  left: 0px;
+  z-index: 3;
+  width: 100%;
+  max-width: 528px;
+  height: 100%;
+  max-height: 50px;
+  background: url(../images/marco-foto-frase2.png) no-repeat center top;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase .contenedor-flechas {
+  position: relative;
+  top: -23px;
+  left: 40px;
+  z-index: 10;
+  width: 100%;
+  max-width: 315px;
+  height: 10px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase .contenedor-flechas .arrow-frases-l {
+  cursor: pointer;
+  float: left;
+  width: 25px;
+  height: 30px;
+  background: url("../images/arrow-left.png") no-repeat center bottom;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase .contenedor-flechas .arrow-frases-r {
+  cursor: pointer;
+  float: right;
+  width: 25px;
+  height: 30px;
+  background: url("../images/arrow-right.png") no-repeat center bottom;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio {
+  position: relative;
+  z-index: 5;
+  margin-top: 26px;
+  /*fin de contenedor-envio*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio {
+  position: relative;
+  top: 0px;
+  z-index: 5;
+  /*fin de pasos-envio*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .titulo-envio {
+  width: 100%;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .titulo-envio h1 {
+  font-family: 'dcc_-_ashregular';
+  color: #22252a;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 48px;
+  margin: 0px;
+  padding-bottom: 11px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .titulo-envio .parrafo-envio {
+  font-family: 'Love Ya Like A Sister';
+  color: #22252a;
+  font-size: 16px;
+  text-align: center;
+  /*padding-bottom: 49px;*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .titulo-envio .parrafo-envio span {
+  display: block;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio {
+  position: relative;
+  width: 100%;
+  z-index: 5;
+  /*btn-confirmar*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .confirmar-enviar {
+  display: none;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .confirmar-enviar .share-redes {
+  width: 100%;
+  overflow: hidden;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .confirmar-enviar .share-redes .titulo-opciones {
+  display: block;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  color: #22252a;
+  margin-bottom: 10px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .confirmar-enviar .share-redes .contenedor-redes {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  /*listado de redes*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .confirmar-enviar .share-redes .contenedor-redes .listado-redes {
+  width: 275px;
+  margin: 0 auto;
+  overflow: hidden;
+  /*margin: 10px auto;*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .confirmar-enviar .share-redes .contenedor-redes .listado-redes li {
+  float: left;
+  list-style: none;
+  padding-left: 10px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .confirmar-enviar .share-redes .contenedor-redes .listado-redes li a {
+  display: block;
+  width: 58px;
+  height: 57px;
+  text-align: center;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .confirmar-enviar .share-redes .contenedor-redes .listado-redes li span {
+  width: 58px;
+  height: 58px;
+  display: block;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .confirmar-enviar .share-redes .contenedor-redes .listado-redes li #btn-download span {
+  background-image: url(../images/ico-redes-download.png);
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .confirmar-enviar .share-redes .contenedor-redes .listado-redes li #btn-download span:hover {
+  background-image: url(../images/ico-redes-download_over.png);
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .confirmar-enviar .share-redes .contenedor-redes .listado-redes li #enviar-mail span {
+  background-image: url(../images/ico-redes-mail.png);
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .confirmar-enviar .share-redes .contenedor-redes .listado-redes li #enviar-mail span:hover {
+  background-image: url(../images/ico-redes-mail_over.png);
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .confirmar-enviar .share-redes .contenedor-redes .listado-redes li #enviar-twitter span {
+  background-image: url(../images/ico-redes-twitter.png);
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .confirmar-enviar .share-redes .contenedor-redes .listado-redes li #enviar-twitter span:hover {
+  background-image: url(../images/ico-redes-twitter_over.png);
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .confirmar-enviar .share-redes .contenedor-redes .listado-redes li #enviar-facebook span {
+  background-image: url(../images/ico-redes-facebook.png);
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .confirmar-enviar .share-redes .contenedor-redes .listado-redes li #enviar-facebook span:hover {
+  background-image: url(../images/ico-redes-facebook_over.png);
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail {
+  display: none;
+  width: 100%;
+  max-width: 400px;
+  height: 360px;
+  margin: 0 auto;
+  /*ultimo*/
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .btn-cerrar-mail {
+  width: 17px;
+  height: 17px;
+  z-index: 3;
+  font-size: 26px;
+  cursor: pointer;
+  float: right;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail fieldset {
+  border: none;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .hide {
+  display: none;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .ajaxgif {
+  position: absolute;
+  left: 72px;
+  top: 32px;
+  width: 40px;
+  height: 40px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .msg {
+  display: none;
+  display: block;
+  font-family: 'Love Ya Like A Sister';
+  color: #22252a;
+  font-size: 16px;
+  height: 52px;
+  line-height: 32px;
+  padding: 0px 20px;
+  position: absolute;
+  left: 116px;
+  top: 36px;
+  min-width: 121px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail *::-webkit-input-placeholder {
+  color: #22252a;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail *:-moz-placeholder {
+  /* FF 4-18 */
+  color: #22252a;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail *::-moz-placeholder {
+  /* FF 19+ */
+  color: #22252a;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail *:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #22252a;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail p {
+  font-family: 'Love Ya Like A Sister';
+  color: #22252a;
+  font-size: 16px;
+  text-align: center;
+  width: 370px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .fondo-mail {
+  position: relative;
+  /*width: 267px;*/
+  height: 102px;
+  background: url(../images/bg-campo.png) no-repeat center top;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .fondo-mail input[name=nombre],
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .fondo-mail input[name=emailrem],
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .fondo-mail input[name=emaildes] {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  width: 59%;
+  border: none;
+  background: none;
+  line-height: normal;
+  font-family: 'Love Ya Like A Sister';
+  color: #22252a;
+  padding: 19px 0px 5px 15px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .fondo-mail input[name=emailrem] {
+  top: 20px;
+  left: 100px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .fondo-mail input[name=emaildes] {
+  top: 20px;
+  left: 100px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .fondo-mail input:-webkit-autofill {
+  background-color: transparent !important;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .fondo-mail input:focus {
+  background-color: transparent !important;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .ultimo {
+  position: relative;
+  width: 126px;
+  height: 102px;
+  bottom: 23px;
+  left: 130px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .ultimo .btn-enviar {
+  background: url(../images/sprite-botones.png) no-repeat -813px 0;
+  width: 104px;
+  height: 44px;
+  margin: 30px auto;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .ultimo .btn-enviar:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .ultimo .btn-enviar:focus {
+  background: url(../images/sprite-botones.png) no-repeat -813px -60px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .ultimo .btn-enviar button[type=submit] {
+  display: block !important;
+  width: 100% !important;
+  height: 129px !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  cursor: pointer !important;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .btn-terminar {
+  display: none;
+  background: url(../images/sprite-botones.png) no-repeat -402px 0;
+  width: 173px;
+  height: 50px;
+  margin: 92px auto;
+  cursor: pointer;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .btn-terminar:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .btn-terminar:focus {
+  background: url(../images/sprite-botones.png) no-repeat -402px -60px;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .btn-confirmar {
+  background: url(../images/sprite-botones.png) no-repeat -950px 0;
+  width: 173px;
+  height: 50px;
+  margin: 30px auto;
+  cursor: pointer;
+}
+.wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .btn-confirmar:hover, .wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .envio .contenedor-envio .pasos-envio .btn-confirmar:focus {
+  background: url(../images/sprite-botones.png) no-repeat -950px -60px;
+}
+.wrapper .secciones .shadow-secciones .cont-descargas {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  background: url(../images/bg_footer_section.png) center center no-repeat;
+  /*fin de descargas-secciones*/
+}
+.wrapper .secciones .shadow-secciones .cont-descargas .descargas-secciones {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 85px;
+  margin: 0 auto;
+  text-align: center;
+  /*border: 1px solid red;*/
+  /*margin: 260px auto 0px auto;*/
+  /*background: url(../images/fondo-descargas.png) center bottom no-repeat;*/
+  background-position-y: 53px;
+  /*fin contenedor-descargas*/
+}
+.wrapper .secciones .shadow-secciones .cont-descargas .descargas-secciones .contenedor-descargas {
+  position: relative;
+  width: 100%;
+  /*max-width: 500px;*/
+  min-height: 49px;
+  margin: 0 auto;
+}
+.wrapper .secciones .shadow-secciones .cont-descargas .descargas-secciones .contenedor-descargas .btn-1 {
+  position: relative;
+  top: 0px;
+  width: 265px;
+  height: 91px;
+  cursor: pointer;
+  margin: 0px auto 40px auto;
+  background: url(../images/bg_cinta.png) center top no-repeat;
+  background-position-x: 69px;
+  background-position-y: 29px;
+}
+.wrapper .secciones .shadow-secciones .cont-descargas .descargas-secciones .contenedor-descargas .btn-1 a {
+  display: block;
+  text-decoration: none;
+}
+.wrapper .secciones .shadow-secciones .cont-descargas .descargas-secciones .contenedor-descargas .btn-1 a img {
+  width: 100%;
+  max-width: 265px;
+  max-height: 91px;
+}
+.wrapper .secciones .shadow-secciones .cont-descargas .descargas-secciones .contenedor-descargas .btn-2 {
+  position: relative;
+  top: 20px;
+  width: 226px;
+  height: 100px;
+  margin: 0px auto 40px auto;
+  background: url(../images/bg_cinta.png) center top no-repeat;
+  background-position-x: 69px;
+}
+.wrapper .secciones .shadow-secciones .cont-descargas .descargas-secciones .contenedor-descargas .btn-2 a {
+  display: block;
+  text-decoration: none;
+}
+.wrapper .secciones .shadow-secciones .cont-descargas .descargas-secciones .contenedor-descargas .btn-2 a img {
+  width: 100%;
+  max-width: 226px;
+  max-height: 75px;
+}
+.wrapper .secciones .shadow-secciones .cont-descargas .descargas-secciones .contenedor-descargas .btn-2 .googleplay {
+  position: absolute;
+  top: 44px;
+  left: 144px;
+  display: inline-block;
+  width: 66px;
+  height: 20px;
+  cursor: pointer;
+}
+.wrapper .secciones .shadow-secciones .cont-descargas .descargas-secciones .contenedor-descargas .btn-2 .applestore {
+  position: absolute;
+  top: 44px;
+  left: 73px;
+  display: inline-block;
+  width: 66px;
+  height: 20px;
+  cursor: pointer;
+}
+.wrapper .secciones .shadow-secciones .cont-descargas .descargas-secciones .tt-secciones {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 85px;
+  margin: 0px auto 40px auto;
+  text-align: center;
+}
+.wrapper .secciones .shadow-secciones .cont-descargas .descargas-secciones .tt-secciones img {
+  width: 100%;
+  max-width: 199px;
+  height: 102px;
+}
+.wrapper .footer {
+  clear: both;
+  position: relative;
+  /*height: 73px;*/
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+  font-size: 8px;
+  color: #727272;
+  /*fin contenedor*/
+}
+.wrapper .footer .contenedor {
+  width: 100%;
+  max-width: 1351px;
+  height: 32px;
+  margin: 0 auto;
+  margin-top: 5px;
+  /*legales*/
+  /*fin de redes*/
+}
+.wrapper .footer .contenedor .copy {
+  width: 490px;
+  float: left;
+  margin-left: 15px;
+}
+.wrapper .footer .contenedor .copy .logo-wb {
+  width: 26px;
+  height: 23px;
+  float: left;
+}
+.wrapper .footer .contenedor .copy p {
+  text-transform: uppercase;
+  margin: 10px 0px 0px 40px;
+}
+.wrapper .footer .contenedor .legales {
+  margin-left: 15px;
+  width: 267px;
+  float: left;
+}
+.wrapper .footer .contenedor .legales ul li {
+  display: inline-block;
+  padding-right: 4px;
+  color: #919090;
+  text-transform: uppercase;
+}
+.wrapper .footer .contenedor .legales ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #919090;
+}
+.wrapper .footer .contenedor .legales ul li a:hover, .wrapper .footer .contenedor .legales ul li a:focus {
+  color: #ffffff;
+  cursor: pointer;
+}
+.wrapper .footer .contenedor .legales ul li:last-child {
+  padding-right: 20px;
+}
+.wrapper .footer .contenedor .legales .separador {
+  width: 3px;
+  height: 24px;
+  font-weight: initial;
+  margin-left: 0px;
+  line-height: 27px;
+}
+.wrapper .footer .contenedor .redes {
+  width: 168px;
+  height: 27px;
+  float: right;
+  margin: 0 15px;
+}
+.wrapper .footer .contenedor .redes p {
+  font-size: 9px;
+  text-transform: uppercase;
+  float: left;
+  line-height: 23px;
+}
+.wrapper .footer .contenedor .redes li {
+  float: left;
+  width: 22px;
+  height: 22px;
+  list-style: none;
+  background-color: #333333;
+  margin-left: 10px;
+}
+.wrapper .footer .contenedor .redes li a {
+  display: block;
+  width: 22px;
+  height: 22px;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  line-height: 23px;
+  font-size: 16px;
+}
+.wrapper .footer .contenedor .redes li:hover, .wrapper .footer .contenedor .redes li:focus {
+  color: #ffffff;
+  background-color: #adadad;
+}
+
+/*fin wrapper*/
+/*@media (min-width:320px) {  smartphones, iPhone, portrait 480x320 phones  }
+@media (min-width:481px) { portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.  }
+@media (min-width:641px) {  portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones  }
+@media (min-width:961px) {  tablet, landscape iPad, lo-res laptops ands desktops }
+@media (min-width:1025px) {  big landscape tablets, laptops, and desktops  }
+@media (min-width:1281px) {  hi-res laptops and desktops }*/
+@media (max-width: 991px) {
+  .wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-objetos {
+    margin: 0 auto;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-elementos {
+    margin: 0 auto;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .elige-personaje .container .objetos .contenedor-listado {
+    right: 150px;
+  }
+
+  .wrapper .secciones .shadow-secciones .objetos-seccion .elige-frase .container .contenedor-elige-frase .contenedor-flechas {
+    left: -51px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 860px) {
+  .wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .encuadrate .container .captura-foto .contenedor-captura {
+    margin: 0px;
+  }
+}
+@media (max-width: 768px) {
+  /*wrapper-devices*/
+  .wrapper-devices .intro-devices {
+    min-height: 975px;
+  }
+
+  .wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .wrapper-titulo .titulo {
+    width: 61%;
+  }
+
+  .wrapper-devices .intro-devices .shadow-intro .contenedor-inicio {
+    background: url(../images/bg-inicio-objetos-sinfotos.png) center top no-repeat;
+  }
+
+  .wrapper .secciones .shadow-secciones .cont-secciones .encuadrate .container .contenedor-encuadrate {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  /*fin de wrapper-devices*/
+  .wrapper .intro {
+    min-height: 975px;
+  }
+
+  .wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .titulo {
+    width: 61%;
+  }
+
+  .wrapper .intro .shadow-intro .contenedor-inicio {
+    background: url(../images/bg-inicio-objetos-sinfotos.png) center top no-repeat;
+  }
+
+  .wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .imagen-boton {
+    /*background: url(../images/bg-mortadeloyfilemon.png) left top no-repeat;*/
+    /*padding-left: 20%;*/
+  }
+  .wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .imagen-boton .btn-empezar {
+    top: 170px;
+    right: 120px;
+    -webkit-transform: translate(-10%, 100px) scale(0.8);
+    -ms-transform: translate(-10%, 100px) scale(0.8);
+    -o-transform: translate(-10%, 100px) scale(0.8);
+    transform: translate(-10%, 100px) scale(0.8);
+    -webkit-transform-origin: bottom right;
+    -moz-transform-origin: bottom right;
+    -ms-transform-origin: bottom right;
+    -o-transform-origin: bottom right;
+  }
+
+  .form-inicio {
+    position: relative;
+    float: right;
+    right: 45px;
+    top: 45px;
+  }
+
+  .wrapper .secciones {
+    /*shadow-secciones*/
+  }
+  .wrapper .secciones .shadow-secciones {
+    /*objetos-seccion*/
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion {
+    /*cont-secciones*/
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones {
+    /*padding-top: 225px;*/
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones .listado-pasos {
+    margin: 0 auto;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .tronchamulas {
+    text-align: center;
+    margin: 80px auto 0px auto;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .opciones .listado-opciones li p {
+    height: 100px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .opciones .listado-opciones li .btn-seleccionar {
+    margin: 21px auto;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .encuadrate .container .contenedor-encuadrate {
+    width: 100%;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .encuadrate .container .contenedor-encuadrate .camara {
+    margin: 190px auto;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .encuadrate .container .contenedor-encuadrate .imagen {
+    width: 400px;
+    height: 64px;
+    position: relative;
+    bottom: 0px;
+    z-index: 22;
+    left: 0px;
+    margin: 0px auto;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .encuadrate .container .captura-foto .contenedor-captura {
+    margin-left: 0px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .container .contenedor-elige-frase .foto-fin {
+    margin: 100px auto;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .container .contenedor-elige-frase .foto-fin .marco-foto {
+    /*background: none;*/
+  }
+
+  /*secciones*/
+}
+/*
+@media only screen and (max-width : 920px) and (min-width: 461px){
+
+}
+*/
+/* Media Queries */
+@media screen and (max-width: 480px) {
+  /*wrapper-devices*/
+  .wrapper-devices {
+    /*FOOTER*/
+  }
+  .wrapper-devices .intro-devices .shadow-intro {
+    min-height: 700px;
+  }
+  .wrapper-devices .intro-devices .shadow-intro .esquinas img {
+    width: 40px;
+    height: 40px;
+  }
+  .wrapper-devices .intro-devices .shadow-intro .contenedor-inicio {
+    background: url(../images/bg-inicio-objetos-sinfotos.png) center top no-repeat;
+    /*wrapper-titulo*/
+  }
+  .wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .wrapper-titulo .titulo {
+    width: 100%;
+    padding-top: 0px;
+  }
+  .wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .mortadelizate img {
+    width: 90%;
+  }
+  .wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .copy-devices {
+    width: 90%;
+    background: none;
+  }
+  .wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .wrapper-titulo .imagen-boton {
+    background: none;
+    height: 0px;
+  }
+  .wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .descargas {
+    position: absolute;
+    top: 470px;
+    left: 0px;
+  }
+  .wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .descargas .contenedor-descargas {
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-1, .wrapper-devices .intro-devices .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-2 {
+    min-height: 85px;
+  }
+  .wrapper-devices .footer {
+    /*CONTENEDOR*/
+  }
+  .wrapper-devices .footer .contenedor .copy {
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+    font-size: 10px;
+  }
+  .wrapper-devices .footer .contenedor .productoras {
+    width: 90%;
+    float: none;
+    margin: 10px auto;
+  }
+  .wrapper-devices .footer .contenedor .redes {
+    float: none;
+    padding-top: 10px;
+    /*				padding-right: 15px;
+    				padding-top: 6px;*/
+    font-size: 10px;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .wrapper-devices .footer .contenedor .legales {
+    float: right;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .wrapper-devices .footer .contenedor .legales ul li {
+    display: inline-block;
+    padding-right: 4px;
+    color: #919090;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+  .wrapper-devices .footer .contenedor .legales ul li a {
+    display: block;
+    text-align: center;
+  }
+
+  /*fin wrapper-devices*/
+  /*fin de wrapper-devices*/
+  .wrapper {
+    /*FOOTER*/
+  }
+  .wrapper .intro .shadow-intro {
+    min-height: 700px;
+  }
+  .wrapper .intro .shadow-intro .esquinas img {
+    width: 40px;
+    height: 40px;
+  }
+  .wrapper .intro .shadow-intro .contenedor-inicio {
+    background: url(../images/bg-inicio-objetos-sinfotos.png) center top no-repeat;
+    /*wrapper-titulo*/
+  }
+  .wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .titulo {
+    width: 100%;
+    padding-top: 0px;
+  }
+  .wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .titulo .mortadelizate img {
+    width: 90%;
+  }
+  .wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .imagen-boton {
+    background: none;
+    height: 0px;
+  }
+  .wrapper .intro .shadow-intro .contenedor-inicio .wrapper-titulo .imagen-boton .btn-empezar {
+    position: static;
+    margin: 50px auto;
+    /*						top: 0px;
+    						right: 90px;*/
+    height: 73px;
+  }
+  .wrapper .intro .shadow-intro .contenedor-inicio .descargas {
+    position: absolute;
+    top: 470px;
+    left: 0px;
+  }
+  .wrapper .intro .shadow-intro .contenedor-inicio .descargas .contenedor-descargas {
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .wrapper .intro .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-1, .wrapper .intro .shadow-intro .contenedor-inicio .descargas .contenedor-descargas .btn-2 {
+    min-height: 85px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion {
+    /*background: #000000 url(../images/pt_section.jpg) repeat;*/
+    /*fin de cont-secciones*/
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones {
+    padding-bottom: 10px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .instrucciones {
+    padding-top: 75px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado {
+    padding-top: 25px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones {
+    margin-top: 30px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .fotografiado .container .opciones .contenedor-opciones .listado-opciones li {
+    width: 100%;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .encuadrate {
+    padding-top: 0px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .encuadrate .contenedor-encuadrate {
+    overflow: hidden;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .encuadrate .contenedor-encuadrate .content-camara .imagen {
+    height: 84px;
+    width: 60%;
+    position: relative;
+    bottom: 20px;
+    z-index: 22;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .encuadrate .contenedor-encuadrate .content-camara .camara {
+    width: 320px;
+    height: 279px;
+    margin: 55px auto;
+    right: 3px;
+    background: none;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .encuadrate .contenedor-encuadrate .content-camara .camara canvas {
+    width: 310px;
+    height: 298px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .encuadrate .contenedor-encuadrate .content-camara .camara .esquinas-camara {
+    height: 375px;
+    width: 375px;
+    top: 110px;
+    left: -29px;
+    background: url(../images/esquinas-marco-small.png) no-repeat center top;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .encuadrate .contenedor-encuadrate .content-camara .camara .esquinas-camara .encuadre {
+    left: 0px;
+    top: 160px;
+    background: url(../images/siluet_small.png) no-repeat center bottom;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-personaje {
+    padding-top: 0px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-personaje .contenedor-elige-personaje {
+    overflow: hidden;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-personaje .contenedor-elige-personaje .foto {
+    width: 320px;
+    height: 227px;
+    margin: 55px auto;
+    right: 3px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-personaje .contenedor-elige-personaje .foto img {
+    width: 320px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-personaje .contenedor-elige-personaje .foto .esquinas-camara {
+    height: 375px;
+    width: 375px;
+    top: 110px;
+    left: -29px;
+    background: url(../images/esquinas-marco-small.png) no-repeat center top;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-personaje .contenedor-elige-personaje .text-foto {
+    top: 0px;
+    left: -105px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-personaje .container .objetos .contenedor-objetos {
+    overflow: hidden;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos {
+    height: 430px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos {
+    top: 100px;
+    right: 0px;
+    width: 100%;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-personaje .container .objetos .contenedor-objetos .contenedor-elementos .listado-objetos li {
+    float: left;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-personaje .container .objetos .contenedor-objetos .contenedor-listado {
+    top: 219px;
+    right: 16px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-personaje .container .objetos .contenedor-objetos .contenedor-listado img {
+    width: 90%;
+    margin-top: 0px !important;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-personaje .container .objetos .contenedor-objetos .btn-continuar {
+    margin: 135px auto;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase {
+    padding-top: 0px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .contenedor-elige-frase {
+    overflow: hidden;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .contenedor-elige-frase .foto-fin {
+    width: 320px;
+    height: 298px;
+    margin: 55px auto;
+    right: 3px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .contenedor-elige-frase .foto-fin canvas {
+    width: 310px;
+    height: 298px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .contenedor-elige-frase .foto-fin img_recortada {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 73px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .contenedor-elige-frase .foto-fin .marco-foto {
+    height: 353px;
+    width: 310px;
+    background: url(../images/marco-foto-frase_small.png) no-repeat center top;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .contenedor-elige-frase .foto-fin .marco-foto .text-foto {
+    top: 230px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .contenedor-elige-frase .foto-fin .marco-foto .text-foto .contenedor-frases {
+    margin: 38px auto 0px auto;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .contenedor-elige-frase .foto-fin .marco-foto2 {
+    width: 310px;
+    top: 317px;
+    background: url(../images/marco-foto-frase2_small.png) no-repeat center top;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .contenedor-elige-frase .contenedor-flechas {
+    top: -60px;
+    left: 71px;
+    z-index: 9;
+    width: 268px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .contenedor-elige-frase .text-foto {
+    top: -109px;
+    left: -105px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .container .envio {
+    overflow: hidden;
+    margin-top: 176px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .container .envio .contenedor-envio {
+    /*overflow: hidden;*/
+    /*margin-top: 139px;*/
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail fieldset {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .btn-cerrar-mail {
+    margin-bottom: 20px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .fondo-mail {
+    width: 80%;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .fondo-mail input[type=text] {
+    left: 47px;
+  }
+  .wrapper .secciones .shadow-secciones .objetos-seccion .cont-secciones .elige-frase .container .envio .contenedor-envio .pasos-envio .form-mail .ultimo {
+    left: 70px;
+    bottom: 42px;
+  }
+  .wrapper .footer {
+    /*CONTENEDOR*/
+  }
+  .wrapper .footer .contenedor .copy {
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+    font-size: 10px;
+  }
+  .wrapper .footer .contenedor .productoras {
+    width: 90%;
+    float: none;
+    margin: 10px auto;
+  }
+  .wrapper .footer .contenedor .redes {
+    float: none;
+    padding-top: 10px;
+    /*				padding-right: 15px;
+    				padding-top: 6px;*/
+    font-size: 10px;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .wrapper .footer .contenedor .legales {
+    float: right;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .wrapper .footer .contenedor .legales ul li {
+    display: inline-block;
+    padding-right: 4px;
+    color: #919090;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+  .wrapper .footer .contenedor .legales ul li a {
+    display: block;
+    text-align: center;
+  }
+}
+/*@import "_media-destktop";*/
